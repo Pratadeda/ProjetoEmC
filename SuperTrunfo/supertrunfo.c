@@ -49,7 +49,7 @@ int main(void) {
     scanf("%d", &numeroturisticos1);
 
     dens1 = populacao1 / area1;
-    pibp1 = (pib1 / populacao1) * 1000000000; 
+    pibp1 = (pib1 *1e9)/ populacao1; 
     
     // Coleta de dados Carta 1 
     printf("\n--- DADOS DA CARTA 1 ---\n");
