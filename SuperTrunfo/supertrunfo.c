@@ -11,8 +11,9 @@ int main(void) {
     SetConsoleOutputCP(CPAGE_UTF8);
 
     //Carta 1
-    int populacao1, numeroturisticos1;
-    float area1, pib1, dens1, pibp1;
+    long long int populacao1;
+    int numeroturisticos1;
+    double area1, pib1, dens1, pibp1;
     char estado1;
     char cidade1[50], codigocarta1[10];
 
@@ -37,19 +38,19 @@ int main(void) {
     cidade1[strcspn(cidade1, "\n")] = '\0'; 
 
     printf("População: ");
-    scanf("%d", &populacao1);
+    scanf("%lld", &populacao1);
 
     printf("Área (km²): ");
-    scanf("%f", &area1);
+    scanf("%lf", &area1);
 
     printf("PIB (em bilhões R$): ");
-    scanf("%f", &pib1);
+    scanf("%lf", &pib1);
 
     printf("Número de pontos turísticos: ");
-    scanf("%d", &numeroturisticos1);
+    scanf(" %d", &numeroturisticos1);
 
     dens1 = populacao1 / area1;
-    pibp1 = (pib1 *1e9)/ populacao1; 
+    pibp1 = ((pib1 * 1e9) / populacao1);
     
     // Coleta de dados Carta 1 
     printf("\n--- DADOS DA CARTA 1 ---\n");
