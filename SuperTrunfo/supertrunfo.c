@@ -124,7 +124,7 @@ int main(void) {
     resultadoSuperpoder = superpoder1 > superpoder2;
 
     printf("Comparação de Cartas:\n");
-    printf("População: Carta 1 venceu (%d)", resultadoPopulacao);
+    printf("População: Carta 1 venceu (%d)\n", resultadoPopulacao);
     printf("Area: Carta 1 venceu (%d)\n", resultadoArea);
     printf("PIB: Carta 1 venceu (%d)\n", resultadoPib);
     printf("Ponto Turisticos: Carta 1 venceu (%d)\n", resultadoPonto);
